@@ -19,6 +19,7 @@ def symlink(src, dest):
 
 links = {
 	"i3.cfg": "~/.config/i3/config",
+	"compton.cfg": "~/.config/compton.conf",
 	"polybar.cfg": "~/.config/polybar/config",
 	"Xresources.cfg": "~/.Xresources",
 	"fonts": "~/.local/share/fonts"
