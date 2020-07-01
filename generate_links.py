@@ -22,6 +22,7 @@ links = {
 	"polybar.cfg": "~/.config/polybar/config",
 	"Xresources.cfg": "~/.Xresources",
 	"fonts": "~/.local/share/fonts"
+	"rofi.cfg": "~/.config/rofi/config"
 }
 
 for src_raw in links:
