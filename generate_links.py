@@ -21,6 +21,7 @@ links = {
 	"i3.cfg": "~/.config/i3/config",
 	"compton.cfg": "~/.config/compton.conf",
 	"polybar.cfg": "~/.config/polybar/config",
+	"rofi.cfg": "~/.config/rofi/config",
 	"Xresources.cfg": "~/.Xresources",
 	"fonts": "~/.local/share/fonts"
 }
