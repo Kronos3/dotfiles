@@ -23,6 +23,7 @@ links = {
 	"polybar.cfg": "~/.config/polybar/config",
 	"rofi.cfg": "~/.config/rofi/config",
 	"Xresources.cfg": "~/.Xresources",
+        "sound-control.sh": "~/.config/polybar/scripts/pulseaudio-control.bash",
 	"fonts": "~/.local/share/fonts"
 }
 
