@@ -21,7 +21,7 @@ links = {
 	"i3.cfg": "~/.config/i3/config",
 	"polybar.cfg": "~/.config/polybar/config",
 	"Xresources.cfg": "~/.Xresources",
-	"fonts": "~/.local/share/fonts"
+	"fonts": "~/.local/share/fonts",
 	"rofi.cfg": "~/.config/rofi/config"
 }
 
