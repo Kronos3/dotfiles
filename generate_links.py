@@ -14,6 +14,7 @@ def symlink(src, dest):
 		os.system("mkdir -p %s" % dest_p.parent.relative_to("/"))
 	
 	print("symlinking %s -> %s" % (dest, src))
+	dest_p.parent.mkdir(exist_ok=True, parents=True)
 	os.symlink(src, str(dest_p))
 
 
