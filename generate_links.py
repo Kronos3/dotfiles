@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 from pathlib import Path
 
@@ -20,10 +22,17 @@ def symlink(src, dest):
 
 links = {
 	"i3.cfg": "~/.config/i3/config",
+	"compton.cfg": "~/.config/compton.conf",
 	"polybar.cfg": "~/.config/polybar/config",
+	"rofi.cfg": "~/.config/rofi/config",
 	"Xresources.cfg": "~/.Xresources",
+<<<<<<< HEAD
 	"fonts": "~/.local/share/fonts",
 	"rofi.cfg": "~/.config/rofi/config"
+=======
+        "sound-control.sh": "~/.config/polybar/scripts/pulseaudio-control.bash",
+	"fonts": "~/.local/share/fonts"
+>>>>>>> origin/kronos
 }
 
 for src_raw in links:
