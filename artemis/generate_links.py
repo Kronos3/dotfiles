@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 from pathlib import Path
 
@@ -11,10 +13,9 @@ def symlink(src, dest):
 		os.remove(str(dest_p))
 	
 	if not dest_p.parent.exists():
-		os.system("mkdir -p %s" % dest_p.parent.relative_to("/"))
+		os.system("mkdir -p %s" % dest_p.parent.absolute())
 	
 	print("symlinking %s -> %s" % (dest, src))
-	dest_p.parent.mkdir(exist_ok=True, parents=True)
 	os.symlink(src, str(dest_p))
 
 
@@ -23,7 +24,10 @@ links = {
 	"polybar.cfg": "~/.config/polybar/config",
 	"Xresources.cfg": "~/.Xresources",
 	"fonts": "~/.local/share/fonts",
-	"rofi.cfg": "~/.config/rofi/config"
+	"wofi.cfg": "~/.config/wofi/config",
+	"wofi.css": "~/.config/wofi/style.css",
+	"rofi.cfg": "~/.config/rofi/config.rasi",
+# 	"rofi.cfg": "~/.config/rofi/config"
 }
 
 for src_raw in links:
