@@ -1,0 +1,9 @@
+{
+  "files": {
+    "$MACHINE/i3.cfg": "~/.config/i3/config",
+    "$MACHINE/Xresources.cfg": "~/.Xresources",
+    "$MACHINE/polybar.cfg": "~/.config/polybar/config",
+    "common/compton.cfg": "~/.config/compton.conf",
+    "common/rofi.cfg": "~/.config/rofi/config"
+  }
+}

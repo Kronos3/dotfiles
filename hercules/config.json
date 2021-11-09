@@ -1,0 +1,6 @@
+{
+  "files": {
+    "$MACHINE/i3.cfg": "~/.config/i3/config",
+    "common/rofi.cfg": "~/.config/rofi/config"
+  }
+}

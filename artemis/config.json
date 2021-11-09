@@ -1,0 +1,12 @@
+{
+  "files": {
+    "$MACHINE/i3.cfg": "~/.config/i3/config",
+    "$MACHINE/waybar.json": "~/.config/waybar/config",
+    "$MACHINE/waybar.css": "~/.config/waybar/style.css",
+    "common/rofi.rasi": "~/.config/rofi/launchers/ribbon/ribbon_tumbar.rasi"
+  },
+
+  "run": [
+    "$MACHINE/setup.sh"
+  ]
+}
