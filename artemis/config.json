@@ -3,7 +3,8 @@
     "$MACHINE/i3.cfg": "~/.config/i3/config",
     "$MACHINE/waybar.json": "~/.config/waybar/config",
     "$MACHINE/waybar.css": "~/.config/waybar/style.css",
-    "common/rofi.rasi": "~/.config/rofi/launchers/ribbon/ribbon_tumbar.rasi"
+    "common/rofi.rasi": "~/.config/rofi/launchers/ribbon/ribbon_tumbar.rasi",
+    "$MACHINE/background.jpg": "~/.config/i3/background.jpg"
   },
 
   "run": [
