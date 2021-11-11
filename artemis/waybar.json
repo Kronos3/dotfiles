@@ -52,20 +52,20 @@
       "", // Icon: battery-three-quarters
       "" // Icon: battery-full
     ],
-    "tooltip": false
+    "tooltip": true
   },
 
   "clock#time": {
-    "interval": 10,
-    "format": "{:%H:%M}",
+    "interval": 1,
+    "format": "{:%H:%M:%S}",
     "tooltip": false
   },
 
   "clock#date": {
     "interval": 20,
     "format": "{:%e %b %Y}", // Icon: calendar-alt
-    //"tooltip-format": "{:%e %B %Y}"
-    "tooltip": false
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip": true
   },
 
   "cpu": {
@@ -94,8 +94,8 @@
     //"format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
     "format-ethernet": " {ifname}",
     "format-disconnected": "",
-    //"tooltip-format": "{ifname}: {ipaddr}",
-    "tooltip": false
+    "tooltip-format": "{ifname}: {ipaddr}",
+    "tooltip": true
     //"on-click": "cmst"
   },
 
