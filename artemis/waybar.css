@@ -2,8 +2,8 @@
     border: none;
     font-family: JetBrains Mono ExtraBold, "Font Awesome 6 Free", sans-serif;
     font-size: 14px;
-    color: #ffffff;
     border-radius: 20px;
+    transition: 0s;
 }
 
 window {
@@ -16,23 +16,28 @@ window#waybar {
 .modules-right {
     background-color: rgba(0,43,51,0.85);
     margin: 2px 5px 5px 0;
+    color: #fff;
 }
 .modules-center {
     background-color: rgba(0,43,51,0.85);
     margin: 2px 2px 2px 0;
+    color: #fff;
 }
 .modules-left {
     margin: 2px 0px 0px 5px;
     background-color: rgba(0,119,179,0.6);
+    color: #fff;
 }
 /*-----modules indv----*/
 #workspaces button {
     padding: 1px 5px;
     background-color: transparent;
+    color: #fff;
 }
 #workspaces button:hover {
     box-shadow: inherit;
     background-color: rgba(0,153,153,1);
+    color: #000;
 }
 
 #workspaces button.focused {
@@ -89,3 +94,7 @@ window#waybar {
  *rgba(0,153,153,1),#009999 --> Persian Green
  *
  */
+
+#tray menu > * {
+    color: #000;
+}
