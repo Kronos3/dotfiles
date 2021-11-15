@@ -94,7 +94,3 @@ window#waybar {
  *rgba(0,153,153,1),#009999 --> Persian Green
  *
  */
-
-#tray menu > * {
-    color: #000;
-}
