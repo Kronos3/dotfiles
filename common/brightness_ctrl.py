@@ -28,6 +28,7 @@ def main(args):
     percent = int(percent[:-1])
 
     # Find the closest bucket
+    # Obviously this could be O(logN) but who gives, its 13 buckets
     closest_idx = 0
     closest_delta = percent
     for i, bucket in enumerate(BRIGHTNESS_LUT):
@@ -36,17 +37,18 @@ def main(args):
             closest_delta = current_delta
             closest_idx = i
 
+    # Slightly different edge checking for increment vs decrementing
     if incrementing:
         next_idx = closest_idx + 1
         if next_idx >= len(BRIGHTNESS_LUT):
             # Don't go past the end
             next_idx = len(BRIGHTNESS_LUT) - 1
-
     else:
         next_idx = closest_idx - 1
         if next_idx < 0:
             next_idx = 0
 
+    # Actually change the brightness
     subprocess.run(["brightnessctl", "set", f"{BRIGHTNESS_LUT[next_idx]}%"], check=True)
 
     return 0

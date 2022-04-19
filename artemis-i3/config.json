@@ -1,0 +1,13 @@
+{
+  "files": {
+    "$MACHINE/i3.cfg": "~/.config/i3/config",
+    "common/rofi.rasi": "~/.config/rofi/launchers/ribbon/ribbon_tumbar.rasi",
+    "common/pulseaudio-control.bash": "~/.config/polybar/scripts/pulseaudio-control.bash",
+    "$MACHINE/background.jpg": "~/.config/i3/background.jpg",
+    "$MACHINE/polybar.cfg": "~/.config/polybar/config"
+  },
+
+  "run": [
+    "$MACHINE/setup.sh"
+  ]
+}
